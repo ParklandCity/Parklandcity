@@ -1,0 +1,300 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* header */
+header{
+    background: rgb(24, 31, 42);
+    padding-top: 30px;
+    min-height: 70px;
+    color: #f4f4f4;
+    border-bottom: #e8491d 2px solid;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0%;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+header a:hover{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* section */
+
+#welcome{
+    min-height: 400px;
+    background: url(backG-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #e8491d;
+}
+
+#welcome h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#welcome h2{
+    font-size: 20px;
+    color: black
+}
+
+
+#welcomeM{
+    min-height: 400px;
+    background: url(IMG-backg.jpg);
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+#welcomeM h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #e8491d;
+}
+
+#welcomeM h1:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#welcomeM h2{
+    font-size: 20px;
+    color: black
+}
+
+#offers .container .pix{
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#offers .container{
+    background: rgba(44, 62, 80, 0.2);
+    width: 60%;
+}
+
+img{
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.4);
+}
+
+article{
+    margin-top: 40px;
+    float: left;
+    width: 60%;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: hsl(202, 88%, 49%);   
+}
+
+li#span .highlight{
+    text-transform: uppercase;
+    color: #e8491d;
+}
+
+li#products p{
+    font-size: 16px;
+}
+
+aside{
+    background: rgba(44, 62, 80, 0.7);
+    margin-top: 80px;
+    margin-bottom: 20px;
+    float: right;
+    width: 35%;
+    color: black;
+}
+
+aside a{
+    color: #ffffff;
+}
+
+aside a:hover{
+    color: #e8491d;
+}
+
+#sidebar .dark{
+    text-align: center;
+}
+
+#newsletter{
+    background: rgb(24, 31, 42);
+    border-bottom: #e8491d 2px solid;
+
+}
+
+#newsletter h1{
+    float: left;
+    color: #e8491d;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 10px;
+}
+
+#newsletter input[type="email"]{
+    height: 25px;
+    width: 250px;
+    padding: 4px;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+} 
+
+footer{
+    background: rgb(11, 21, 35);
+    color: #ffffff;
+}
+
+footer .firstfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .firstfooter .loc{
+    margin-top: 30px;
+}
+
+footer .firstfooter li{
+    list-style: none;
+}
+
+footer .secondfooter{
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+    header li{
+        width: 100%;
+        display: block;
+    }
+    
+    header #branding{
+        width: 100%;
+    }
+    
+    header #branding h1{
+        margin: 0%;
+    }
+
+    header nav{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+     }
+
+     #welcome h1{
+        margin-top: 100px;
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    #welcomeM h1{
+        margin-top: 100px;
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #e8491d;
+    }
+
+    #welcomeM{
+        min-height: 400px;
+        background: url(IMG-backg.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #newsletter{
+        width: 100%;
+    }
+
+    article{
+        width: 100%;
+        justify-content: center;
+    }
+
+    aside{
+        width: 100%;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    footer .firstfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5px;
+    }
+}
+
